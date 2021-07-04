@@ -1,3 +1,9 @@
 table, th, td {
     border: 1px solid black;
+  const btn = document.getElementById('button')
+  btn.onclick =  function (){
+      const inputValue = document.getElementById('input').value
+      const h1 = document.querySelector('h1')   
+      const text = document.createTextNode(inputValue)
+      h1.appendChild(text)
   }
