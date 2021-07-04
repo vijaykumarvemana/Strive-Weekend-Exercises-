@@ -25,3 +25,18 @@ for(b of bt){
     ul.appendChild(li)
 }
 }
+
+function AddRow() {
+    const table = document.getElementById("myTable")
+    let row = table.insertRow(5)
+    let cell1 = row.insertCell(0)
+    let cell2 = row.insertCell(1)
+    let cell3 = row.insertCell(2)
+    let cell4 = row.insertCell(3)
+    let cell5 = row.insertCell(4)
+    cell1.innerHTML = document.getElementById('cellOne').value
+    cell2.innerHTML = document.getElementById('cellTwo').value
+    cell3.innerHTML = document.getElementById('cellThree').value
+    cell4.innerHTML = document.getElementById('cellFour').value
+    cell5.innerHTML = document.getElementById('cellFive').value
+  }

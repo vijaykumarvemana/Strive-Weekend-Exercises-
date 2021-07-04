@@ -10,7 +10,7 @@
 <body>
       <h1>WEEKEND</h1>
       <h3>Exercises</h3>
-      <table>
+      <table id = "myTable">
           <tr>
               <th>ID</th>
               <th>Name</th>
@@ -60,16 +60,16 @@
           <ul></ul>
           <form>
               <label>ID:</label>
-              <input type="text" >
+              <input type="text" id="cellOne">
               <label >Name:</label>
-              <input type="text">
+              <input type="text" id="cellTwo">
               <label >Surname:</label>
-              <input type="text">
+              <input type="text" id="cellThree">
               <label >Age:</label>
-              <input type="number">
+              <input type="number" id="cellFour">
               <label >Email:</label>
-              <input type="email">
-              <input type = "button" id="add-table-row" value = "Row">
+              <input type="email" id="cellFive">
+              <input type = "button" id="add-table-row" value = "add-students" onclick="AddRow()">
           </form>
       </section>
       
