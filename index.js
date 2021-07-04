@@ -8,7 +8,14 @@ btn.onclick =  function (){
         const title = document.getElementsByTagName('title') 
         title.innerHTML = `${inputValue}`
         h1.innerHTML = `${inputValue}`
+    }   
+}
 
-    }
-    
+const bt = document.querySelectorAll('#action')
+for(b of bt){
+    b.onclick = function(){
+    const ul = document.querySelector('ul')
+    const li = document.createElement('li')
+    ul.appendChild(li)
+}
 }
