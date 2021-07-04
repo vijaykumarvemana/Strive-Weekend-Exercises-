@@ -16,6 +16,12 @@ for(b of bt){
     b.onclick = function(){
     const ul = document.querySelector('ul')
     const li = document.createElement('li')
+    const b = document.createElement('button')
+    b.innerHTML = "button"
+    b.onclick = function (){
+        li.remove()
+    }
+    li.appendChild(b)
     ul.appendChild(li)
 }
 }
